@@ -1,0 +1,75 @@
+.box-running {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(135, 87, 87);
+    position: relative;
+    left: 0px;
+    margin-left: 0px;
+    animation-name: run;
+    animation-duration: 2s;
+}
+
+#selector {
+    width: 100%;
+    color: black;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+#title {
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+
+.content {
+    margin: auto;
+    width: 70%;
+}
+
+.submit-button {
+    margin: auto;
+    width: 50%;
+    display: flex;
+}
+
+#button-text {
+    margin: auto;
+    width: fit-content;
+}
+
+
+@keyframes jump {
+    0% {
+        bottom: 0px;
+    }
+
+    25% {
+        bottom: 25px;
+    }
+
+    50% {
+        bottom: 50px;
+    }
+
+    75% {
+        bottom: 25px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes run {
+    from {
+        margin-right: 100%;
+        right: 100%;
+    }
+
+    to {
+        margin-right: 0%;
+        right: 0%;
+    }
+}

@@ -1,0 +1,24 @@
+<h1 id="title"><strong>{{currentQuestion.tittle}}</strong></h1>
+
+<div *ngIf="!isFinished else elseBlock" class="content">
+    <form [formGroup]="quizForm">
+        
+        <p>Tema: {{currentQuestion.theme}}</p>
+        <label for="selector">{{currentQuestion.description}} </label>
+        <!-- <select formControlName="answer">
+            <option value="0">Nada</option>
+            <option value="20" selected>Muito pouco</option>
+            <option value="40">Pouco</option>
+            <option value="50">Neutro</option>
+            <option value="65">Sim, mas não muito</option>
+            <option value="85">Bom</option>
+            <option value="100">Muito bom</option>
+        </select> -->
+        <input type="range" id="selector" formControlName="answer">
+        <hr>
+        <button (click)="submitQuestion()" type="submit" class="submit-button">
+            <p id="button-text">Próxima</p>
+        </button>
+    </form>
+</div>
+<ng-template #elseBlock>Avaliação concluída!</ng-template>
