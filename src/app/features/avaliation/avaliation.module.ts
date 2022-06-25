@@ -5,11 +5,13 @@ import { AvaliationRoutingModule } from './avaliation-routing.module';
 import { QuizComponent } from './quiz/quiz.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatSliderModule} from '@angular/material/slider';
+import { AvaliationReportComponent } from './avaliation-report/avaliation-report.component';
 
 
 @NgModule({
   declarations: [
-    QuizComponent
+    QuizComponent,
+    AvaliationReportComponent
   ],
   imports: [
     CommonModule,
