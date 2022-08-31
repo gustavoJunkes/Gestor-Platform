@@ -1,3 +1,5 @@
+import { SharedModule } from './../../shared/shared.module';
+import { HeaderComponent } from './../../shared/header/header.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -18,7 +20,8 @@ import { AvaliationReportComponent } from './avaliation-report/avaliation-report
     AvaliationRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    MatSliderModule
+    MatSliderModule,
+    SharedModule
   ],
   exports: []
 })
